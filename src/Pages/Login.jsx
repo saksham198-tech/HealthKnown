@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Lock, Loader2, Chrome } from "lucide-react";
-import { auth, googleProvider, db } from "../firebase";
+import { auth, googleProvider, db } from "../FireBase";
 import {
   signInWithEmailAndPassword,
   signInWithPopup,

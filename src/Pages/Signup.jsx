@@ -1,7 +1,7 @@
 import { Key, Mail, User } from "lucide-react";
 import React, { useState } from "react";
 import {createUserWithEmailAndPassword, signInWithPopup} from "firebase/auth"
-import {db,auth,googleProvider} from "../firebase";
+import {db,auth,googleProvider} from "../FireBase";
 import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import {Link} from "react-router-dom";
 
