@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Plus,Dumbbell, Facebook, Instagram, Linkedin, Phone, Mail, Map, Locate, LocateIcon, MapIcon, PlusIcon, ArrowBigDown, ArrowBigDownDash, ArrowDownCircle, ArrowUpCircleIcon, ArrowRightFromLine, ArrowUpRightFromCircle, ArrowUpRightFromCircleIcon} from 'lucide-react'
 import CountUp from '../components/CountUp'
+import Contact from './Contact'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -11,6 +13,7 @@ import CountUp from '../components/CountUp'
 const About = () => {
 
 
+const navigate = useNavigate()
 
   return (
     <div className=' bg-gray-100 font-sans'>
@@ -50,7 +53,7 @@ const About = () => {
           </p>
         </div>
         <div className='relative mr-30 h-133 w-190'>
-          <div className='absolute p-4 ml-80  '><img className='rounded-2xl  w-130 shadow-lg  h-80' src="aboutimage.png" alt="" /></div>
+          <div className='absolute p-4 ml-80  '><img className='rounded-2xl  w-150 shadow-lg  h-80' src="aboutimage.png" alt="" /></div>
           <div className='absolute bg-white ml-55 top-50 rounded-xl'><img className='rounded-2xl shadow-lg w-60 p-1' src="https://tse4.mm.bing.net/th/id/OIP.rM9QPw3FGfV2yoboGohhoQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" /></div>
         </div>
 
@@ -144,7 +147,7 @@ const About = () => {
         </div>
         <div className='w-300 h-30 bg-white m-auto pl-8 pr-8 flex justify-between items-center rounded-2xl shadow-lg'>
           <h2 className='text-3xl font-bold'>Have any questions?</h2>
-          <button className='font-bold flex flex-row max-wd-md:flex-col gap-0.5 pl-6 items-center text-2xl text-center rounded-lg w-50 h-14 text-white bg-red-700'>Contact us<ArrowUpRightFromCircleIcon className='mt-2'/></button>
+          <button onClick={()=>navigate("/contact")} className='font-bold flex flex-row max-wd-md:flex-col gap-0.5 pl-6 items-center text-2xl text-center rounded-lg w-50 h-14 text-white bg-red-700'>Contact us<ArrowUpRightFromCircleIcon className='mt-2'/></button>
         </div>
       </div>
       <div className='w-screen h-110 flex items-center gap-60 justify-center bg-black text-white mt-15'>

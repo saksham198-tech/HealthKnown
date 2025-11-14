@@ -11,6 +11,7 @@ import About from './Pages/About'
 import Dashboard from './Pages/Dashboard'
 import TargetForm from './Pages/TargetForm'
 import WeeklyPlan from './Pages/WeeklyPlan'
+import Contact from './Pages/Contact'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <Route path='/Dashboard' element={<Dashboard/>}/>
      <Route path='/target-setup' element={<TargetForm/>}/>
      <Route path="/weekly-plan" element={<WeeklyPlan/>}/>
+     <Route path='/contact' element={<Contact/>} />
    </Routes>
    </BrowserRouter>
   )
